@@ -1,0 +1,280 @@
+$black : rgb(15, 15, 15);
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+.navbar {
+    width: 100vw;
+    height: 80px;
+    background-color: transparent;
+}
+
+#navbar-container {
+    width: 80%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-logo {
+    display: flex;
+    width: 15%;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    margin-left: 50px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.menu-logo a {
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+}
+
+.nav-links ul{
+    height: 80px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 50px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    margin-left: 30px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.section-1 {
+    width: 100vw;
+    height: 100vh;
+    margin-top: -80px;
+    padding-top: 100px;
+    background-color: rgba(0, 0, 0, 0.986);
+    background-image: url('images/main-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.left-block {
+    margin-left: 140px;
+    width: 700px;
+    height: 600px;
+}
+
+.left-block-title {
+    color: rgb(248, 168, 76);
+    font-size: 1em;
+}
+
+.left-block-title-2 {
+    color: #fff;
+    font-size: 4em;
+}
+
+.left-block-subtitle {
+    color: #fff;
+    font-weight: 300;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+.button-orange {
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    background-color: rgb(236, 132, 62);
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.button-orange:hover {
+    -webkit-box-shadow: 0px 8px 19px 5px rgba(255,161,46,0.22);
+    box-shadow: 0px 8px 19px 5px rgba(255,161,46,0.22);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.button-question {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.button-question:hover {
+    -webkit-box-shadow: 0px 8px 21px 5px rgba(255,255,255,0.22); 
+    box-shadow: 0px 8px 21px 5px rgba(255,255,255,0.22);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.calculsForm {
+    display: none;
+    margin-top: -200px;
+    width: 500px;
+    height: 400px;
+    flex-direction: column;
+    margin-left: 150px;
+    align-items: center;
+}
+
+#input-text {
+    width: 300px;
+    height: 30px;
+    background-color: rgb(43, 43, 43);
+    border: none;
+    border-radius: 8px;
+    padding: 4px 8px 4px 8px;
+    margin-top: 20px;
+    color: rgb(230, 230, 230);
+    font-size: 0.8em;
+}
+
+#input-mail {
+    width: 300px;
+    height: 30px;
+    background-color: rgb(43, 43, 43);
+    border: none;
+    border-radius: 8px;
+    padding: 4px 8px 4px 8px;
+    margin-top: 20px;
+    color: rgb(230, 230, 230);
+    font-size: 0.8em;
+}
+
+#input-pwd {
+    width: 300px;
+    height: 30px;
+    background-color: rgb(43, 43, 43);
+    border: none;
+    border-radius: 8px;
+    padding: 4px 8px 4px 8px;
+    margin-top: 20px;
+    color: rgb(230, 230, 230);
+    font-size: 0.8em;
+}
+
+#input-text:focus {
+    background-color: rgb(44, 44, 44);
+    -webkit-box-shadow: inset 0px 0px 16px 8px rgba(0,0,0,0.10);
+    -moz-box-shadow: inset 0px 0px 16px 8px rgba(0,0,0,0.10);
+    box-shadow: inset 0px 0px 16px 8px rgba(0,0,0,0.10);
+    border: 1px solid rgb(49, 49, 49);
+    transition: 0.3s;
+}
+
+#input-mail:focus {
+    background-color: rgb(44, 44, 44);
+    -webkit-box-shadow: inset 0px 0px 16px 8px rgba(0,0,0,0.10);
+    -moz-box-shadow: inset 0px 0px 16px 8px rgba(0,0,0,0.10);
+    box-shadow: inset 0px 0px 16px 8px rgba(0,0,0,0.10);
+    border: 1px solid rgb(49, 49, 49);
+    transition: 0.3s;
+}
+
+#input-pwd:focus {
+    background-color: rgb(44, 44, 44);
+    -webkit-box-shadow: inset 0px 0px 16px 8px rgba(0,0,0,0.10);
+    -moz-box-shadow: inset 0px 0px 16px 8px rgba(0,0,0,0.10);
+    box-shadow: inset 0px 0px 16px 8px rgba(0,0,0,0.10);
+    border: 1px solid rgb(49, 49, 49);
+    transition: 0.3s;
+}
+
+#button-1 {
+    width: 220px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    background-color: rgb(236, 132, 62);
+    color: rgb(230, 230, 230);
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#button-1:hover {
+    -webkit-box-shadow: 0px 8px 19px 5px rgba(255,161,46,0.22);
+    box-shadow: 0px 8px 19px 5px rgba(255,161,46,0.22);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.calculsForm label {
+    color: rgb(214, 214, 214);
+}
+
+.inputRadio-1 {
+    margin: .4rem;
+    margin-left: 25px;
+}
+
+.inputRadio-2 {
+    margin: .4rem;
+    margin-left: 25px;
+}
+
+
+
+[type="radio"]:checked {
+    background: orange;
+}
+
+
+
+
+
+
+
+
