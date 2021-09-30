@@ -188,6 +188,22 @@
           align-items: center;
 }
 
+.contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 500px;
+  height: 400px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 150px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #input-text {
   width: 300px;
   height: 30px;
@@ -222,6 +238,19 @@
   margin-top: 20px;
   color: #e6e6e6;
   font-size: 0.8em;
+}
+
+#input-msg-1 {
+  width: 300px;
+  height: 150px;
+  background-color: #2b2b2b;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 8px 4px 8px;
+  margin-top: 20px;
+  color: #e6e6e6;
+  font-size: 0.8em;
+  resize: none;
 }
 
 #input-text:focus {
