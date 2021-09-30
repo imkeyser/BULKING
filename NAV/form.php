@@ -45,18 +45,18 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> 
     
     <div class="main-container-center">
-        <h1 class="left-block-title-2">
-            <?php echo $firstname;?>, faisons connaissance
-        </h1>
-        <form id="calculs-form-2" action="NAV/form.php" method="POST">
-            <input type="text" id="input-text" name="height" placeholder="Votre taille en cm">
+        <form id="calculs-form-2" action="../PROCESS/calories-calculator.php" method="POST">
+            <h1 class="left-block-title-2 orange-text">
+                <?php echo $firstname;?>, faisons connaissance
+            </h1>
+            <input type="text" id="input-text-2" name="height" placeholder="Votre taille en cm">
             <br>
-            <input type="text" id="input-text" name="weight" placeholder="Votre poids">
+            <input type="text" id="input-text-2" name="weight" placeholder="Votre poids">
             <br>
-            <input type="text" id="input-text" name="age" placeholder="Votre age">
+            <input type="text" id="input-text-2" name="age" placeholder="Votre age">
             <br><br>
             <p>
                 <b>Combien de fois vous entrenez-vous / semaines ?</b>
