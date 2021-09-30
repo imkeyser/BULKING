@@ -3,6 +3,14 @@
     $firstname = $_POST['firstname'];
     $email = $_POST['email'];
     $civility = $_POST['civility'];
+
+    session_start();
+
+    $_SESSION['lastname'] = $lastname;
+    $_SESSION['firstname'] = $firstname;
+    $_SESSION['email'] = $email;
+    $_SESSION['civility'] = $civility;
+    
 ?>
 
 <!DOCTYPE html>
@@ -70,9 +78,9 @@
                 <b>Quel est votre objectif ?</b>
             </p>
             <br>
-            <input type="radio" id="objectif" name="objectif" value="loseWeight" class="inputRadio-2" style="margin-left: 0px;"><label for="huey">Perdre du poids</label>
-            <input type="radio" id="objectif" name="objectif" value="maintain" class="inputRadio-2"><label for="huey">Vous maintenir</label>
-            <input type="radio" id="objectif" name="objectif" value="gainMuscle" class="inputRadio-2"><label for="huey">Prendre du muscle</label>
+            <input type="radio" id="objectif" name="objectif" value="loseWeight" class="inputRadio-2" style="margin-left: 0px;"><label for="objectif">Perdre du poids</label>
+            <input type="radio" id="objectif" name="objectif" value="maintain" class="inputRadio-2"><label for="objectif">Vous maintenir</label>
+            <input type="radio" id="objectif" name="objectif" value="gainMuscle" class="inputRadio-2"><label for="objectif">Prendre du muscle</label>
             <br><br>
             <button id="button-1" onclick="rtn()" style="background: #fff; color: orange; border: 2px solid orange;">RETOUR</button><input style="margin-left: 15px;" type="submit" id="button-1" onclick="submitForm()" value="CONTINUER">
             <br><br>
