@@ -4,5 +4,11 @@ $('document').ready(function(){
         $('.left-block').fadeOut(100);
         $('.calculsForm').fadeIn(900);
     });
-    
+    $('#calculs-form-2').submit(function() {
+        return false;
+    });
 });
+
+function rtn() {
+    window.location.replace("../");
+}

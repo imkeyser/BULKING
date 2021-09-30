@@ -1,3 +1,10 @@
+<?php
+    $lastname = $_POST['lastname'];
+    $firstname = $_POST['firstname'];
+    $email = $_POST['email'];
+    $civility = $_POST['civility'];
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -19,7 +26,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../FAVS.ico/favicon-16x16.png">
     <link rel="manifest" href="../FAVS.ico/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="../FAVS.ico/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,13 +40,44 @@
             <div class="menu-logo"><a href="/">BULKING!</a></div>
             <div class="nav-links">
                 <ul>
-                    <li><a style="text-decoration: underline; text-underline-offset: 5px;" href="/">Accueil</a></li>
+                    <li><a href="/">Accueil</a></li>
                     <li><a href="NAV/">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     
+    <div class="main-container-center">
+        <h1 class="left-block-title-2">
+            <?php echo $firstname;?>, faisons connaissance
+        </h1>
+        <form id="calculs-form-2" action="NAV/form.php" method="POST">
+            <input type="text" id="input-text" name="height" placeholder="Votre taille en cm">
+            <br>
+            <input type="text" id="input-text" name="weight" placeholder="Votre poids">
+            <br>
+            <input type="text" id="input-text" name="age" placeholder="Votre age">
+            <br><br>
+            <p>
+                <b>Combien de fois vous entrenez-vous / semaines ?</b>
+            </p>
+            <br>
+            <input type="radio" id="nbWorkout" name="nbWorkout" value="12" class="inputRadio-2" style="margin-left: 0px;"><label for="huey">1 à 2 fois</label>
+            <input type="radio" id="nbWorkout" name="nbWorkout" value="34" class="inputRadio-2"><label for="huey">3 à 4 fois</label>
+            <input type="radio" id="nbWorkout" name="nbWorkout" value="56" class="inputRadio-2"><label for="huey">5 à 6 fois</label>
+            <br><br>
+            <p>
+                <b>Quel est votre objectif ?</b>
+            </p>
+            <br>
+            <input type="radio" id="objectif" name="objectif" value="loseWeight" class="inputRadio-2" style="margin-left: 0px;"><label for="huey">Perdre du poids</label>
+            <input type="radio" id="objectif" name="objectif" value="maintain" class="inputRadio-2"><label for="huey">Vous maintenir</label>
+            <input type="radio" id="objectif" name="objectif" value="gainMuscle" class="inputRadio-2"><label for="huey">Prendre du muscle</label>
+            <br><br>
+            <button id="button-1" onclick="rtn()" style="background: #fff; color: orange; border: 2px solid orange;">RETOUR</button><input style="margin-left: 15px;" type="submit" id="button-1" onclick="submitForm()" value="CONTINUER">
+            <br><br>
+        </form>
+    </div>
         
     </div>
     <script type="text/javascript" src="../JS/jquery.min.js"></script>
