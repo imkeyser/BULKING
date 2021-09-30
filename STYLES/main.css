@@ -359,4 +359,12 @@ body {
   height: 90vh;
   margin: auto;
 }
+
+#caloriesPerDay {
+  color: #ec843e;
+}
+
+#text-center {
+  text-align: center;
+}
 /*# sourceMappingURL=main.css.map */

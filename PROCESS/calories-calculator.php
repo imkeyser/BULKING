@@ -65,10 +65,16 @@ else if($objectif == 'gainMuscle')
     $finalCaloriesPerDay = $caloriesPerDay + $percentage;
 }
 
-$finalCaloriesPerDay = round($finalCaloriesPerDay);
-echo('<br>');
-echo $finalCaloriesPerDay;
+else if($objectif == 'maintain')
+{
+    $finalCaloriesPerDay = $finalCaloriesPerDay;
+}
 
+$finalCaloriesPerDay = round($finalCaloriesPerDay);
+
+$_SESSION['caloriesPerDay'] = $finalCaloriesPerDay;
+
+header('Location: ../NAV/results-calories.php');
 
 
 

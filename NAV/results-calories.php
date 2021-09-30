@@ -1,18 +1,7 @@
 <?php
-    $lastname = $_POST['lastname'];
-    $firstname = $_POST['firstname'];
-    $email = $_POST['email'];
-    $civility = $_POST['civility'];
-
     session_start();
-
-    $_SESSION['lastname'] = $lastname;
-    $_SESSION['firstname'] = $firstname;
-    $_SESSION['email'] = $email;
-    $_SESSION['civility'] = $civility;
-    
+    $resultCalories = $_SESSION['caloriesPerDay'];
 ?>
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -56,35 +45,10 @@
     </nav> 
     
     <div class="main-container-center">
-        <form id="calculs-form-2" action="../PROCESS/calories-calculator.php" method="POST">
-            <h1 class="left-block-title-2 orange-text">
-                <?php echo $firstname;?>, faisons connaissance
-            </h1>
-            <input type="text" id="input-text-2" name="height" placeholder="Votre taille en cm">
-            <br>
-            <input type="text" id="input-text-2" name="weight" placeholder="Votre poids">
-            <br>
-            <input type="text" id="input-text-2" name="age" placeholder="Votre age">
-            <br><br>
-            <p>
-                <b>Combien de fois vous entrenez-vous / semaines ?</b>
-            </p>
-            <br>
-            <input type="radio" id="nbWorkout" name="nbWorkout" value="12" class="inputRadio-2" style="margin-left: 0px;"><label for="huey">1 à 2 fois</label>
-            <input type="radio" id="nbWorkout" name="nbWorkout" value="34" class="inputRadio-2"><label for="huey">3 à 4 fois</label>
-            <input type="radio" id="nbWorkout" name="nbWorkout" value="56" class="inputRadio-2"><label for="huey">5 à 6 fois</label>
-            <br><br>
-            <p>
-                <b>Quel est votre objectif ?</b>
-            </p>
-            <br>
-            <input type="radio" id="objectif" name="objectif" value="loseWeight" class="inputRadio-2" style="margin-left: 0px;"><label for="huey">Perdre du poids</label>
-            <input type="radio" id="objectif" name="objectif" value="maintain" class="inputRadio-2"><label for="objectif">Vous maintenir</label>
-            <input type="radio" id="objectif" name="objectif" value="gainMuscle" class="inputRadio-2"><label for="objectif">Prendre du muscle</label>
-            <br><br>
-            <button id="button-1" onclick="rtn()" style="background: #fff; color: orange; border: 2px solid orange;">RETOUR</button><input style="margin-left: 15px;" type="submit" id="button-1" onclick="submitForm()" value="CONTINUER">
-            <br><br>
-        </form>
+    <h1 class="left-block-title-2" id="text-center">
+        VOTRE OBJECTIF CALORIQUE JOURNALIER :
+    </h1>
+    <div style="color: orange; font-size: 3rem; text-align: center;" id="caloriesPerDay text-center"><?php echo $resultCalories; ?></div>
     </div>
         
     </div>
