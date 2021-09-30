@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #181818;
+  background: black;
 }
 
 .navbar {
@@ -209,6 +209,7 @@ body {
 }
 
 #calculs-form-2 {
+  margin-top: 25px;
   background: #fff;
   padding: 15px 25px 15px 25px;
   border-bottom-right-radius: 20px;

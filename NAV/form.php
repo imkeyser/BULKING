@@ -40,8 +40,8 @@
             <div class="menu-logo"><a href="/">BULKING!</a></div>
             <div class="nav-links">
                 <ul>
-                    <li><a href="/">Accueil</a></li>
-                    <li><a href="NAV/">Contact</a></li>
+                    <li><a href="../">Accueil</a></li>
+                    <li><a href="../NAV/">Contact</a></li>
                 </ul>
             </div>
         </div>

@@ -9,7 +9,7 @@ $black : rgb(15, 15, 15);
 }
 
 body {
-    background: rgb(24, 24, 24);
+    background: rgb(0, 0, 0);
 }
 
 .navbar {
@@ -178,6 +178,7 @@ body {
 }
 
 #calculs-form-2 {
+    margin-top: 25px;
     background: #fff;
     padding: 15px 25px 15px 25px;
     border-bottom-right-radius: 20px;
