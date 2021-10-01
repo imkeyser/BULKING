@@ -91,6 +91,12 @@ body {
     font-size: 4em;
 }
 
+.middle-title-wide {
+    color: $orange;
+    font-size: 3em;
+    text-align: center;
+}
+
 .left-block-subtitle {
     color: $white;
     font-weight: 300;
@@ -337,6 +343,27 @@ body {
 }
 
 #text-center {
+    text-align: center;
+}
+
+.nutrimentsSection {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.nutriment-result {
+    width: 28%;
+    height: 350px;
+    background: $white;
+    border-radius: 20px;
+    padding: 15px 10px 15px 10px;
+    text-align: center;
+}
+
+.nutriment-title {
     text-align: center;
 }
 

@@ -108,6 +108,12 @@ body {
   font-size: 4em;
 }
 
+.middle-title-wide {
+  color: #ec843e;
+  font-size: 3em;
+  text-align: center;
+}
+
 .left-block-subtitle {
   color: #f7f7f7;
   font-weight: 300;
@@ -365,6 +371,30 @@ body {
 }
 
 #text-center {
+  text-align: center;
+}
+
+.nutrimentsSection {
+  width: 100%;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 25px;
+}
+
+.nutriment-result {
+  width: 28%;
+  height: 350px;
+  background: #f7f7f7;
+  border-radius: 20px;
+  padding: 15px 10px 15px 10px;
+  text-align: center;
+}
+
+.nutriment-title {
   text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

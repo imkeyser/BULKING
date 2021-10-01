@@ -67,10 +67,24 @@ else if($objectif == 'gainMuscle')
 
 else if($objectif == 'maintain')
 {
-    $finalCaloriesPerDay = $finalCaloriesPerDay;
+    $finalCaloriesPerDay = $caloriesPerDay;
 }
 
 $finalCaloriesPerDay = round($finalCaloriesPerDay);
+
+
+
+$_SESSION['proteinPerDayGrams'] = 2*$weight;
+$_SESSION['lipidsPerDayGrams'] = 1*$weight;
+$proteinCalories = $_SESSION['proteinPerDayGrams']*4;
+$lipidsCalories = $_SESSION['lipidsPerDayGrams']*9;
+$totalCalories = $proteinCalories + $lipidsCalories;
+$_SESSION['carbsPerDayCal'] = $finalCaloriesPerDay - $totalCalories;
+$_SESSION['proteinPerDayCal'] = $_SESSION['proteinPerDayGrams'] * 4;
+$_SESSION['lipidsPerDayCal'] = $_SESSION['lipidsPerDayGrams'] * 9;
+$_SESSION['carbsPerDayGrams'] = $_SESSION['carbsPerDayCal'] / 4;
+
+
 
 $_SESSION['caloriesPerDay'] = $finalCaloriesPerDay;
 

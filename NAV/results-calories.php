@@ -1,6 +1,14 @@
 <?php
     session_start();
     $resultCalories = $_SESSION['caloriesPerDay'];
+    $resultProteinGrams = $_SESSION['proteinPerDayGrams'];
+    $resultLipidsGrams = $_SESSION['lipidsPerDayGrams'];
+    $resultCarbsGrams = $_SESSION['carbsPerDayGrams'];
+    $resultProteinCal = $_SESSION['proteinPerDayCal'];
+    $resultLipidsCal = $_SESSION['lipidsPerDayCal'];
+    $resultCarbsCal = $_SESSION['carbsPerDayCal'];
+    
+    
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -48,9 +56,62 @@
     <h1 class="left-block-title-2" id="text-center">
         VOTRE OBJECTIF CALORIQUE JOURNALIER :
     </h1>
-    <div style="color: orange; font-size: 3rem; text-align: center;" id="caloriesPerDay"><?php echo $resultCalories; ?></div>
+    <div style="color: rgb(236, 132, 62); font-size: 3rem; text-align: center;" id="caloriesPerDay"><?php echo $resultCalories; ?></div>
+    <h3 class="left-block-subtitle" id="text-center">
+        Ce résultat est calculé en fonction des données que vous avez renseigné. 
+    </h3>
+    <br>
+    <h1 class="middle-title-wide" id="text-center">
+        COMPOSITION NUTRITIONELLE :
+    </h1>
+    <div class="nutrimentsSection">
+        <div class="nutriment-result">
+            <h3 class="nutriment-title">
+                PROTÉINES
+            </h3>
+            <br><br>
+            <div style="color: rgb(236, 132, 62); font-size: 3rem;" id="proteinsPerDayGrams"><?php echo $resultProteinGrams; ?></div>
+            <h3 class="left-block-subtitle" style="color: black;" id="text-center">
+                <b>grammes/jours</b>
+            </h3>
+            <br>
+            <div style="color: rgb(236, 132, 62); font-size: 3rem;" id="proteinsPerDayCal"><?php echo $resultProteinCal; ?></div>
+            <h3 class="left-block-subtitle" style="color: black;" id="text-center">
+                <b>kcal/jours</b>
+            </h3>
+        </div>
+        <div class="nutriment-result">
+            <h3 class="nutriment-title">
+                LIPIDES
+            </h3>
+            <br><br>
+            <div style="color: rgb(236, 132, 62); font-size: 3rem;" id="lipidsPerDayGrams"><?php echo $resultLipidsGrams; ?></div>
+            <h3 class="left-block-subtitle" style="color: black;" id="text-center">
+                <b>grammes/jours</b>
+            </h3>
+            <br>
+            <div style="color: rgb(236, 132, 62); font-size: 3rem;" id="lipidsPerDayCal"><?php echo $resultLipidsCal; ?></div>
+            <h3 class="left-block-subtitle" style="color: black;" id="text-center">
+            <b>kcal/jours</b>
+            </h3>
+
+        </div>
+        <div class="nutriment-result">
+            <h3 class="nutriment-title">
+                GLUCIDES
+            </h3>
+            <br><br>
+            <div style="color: rgb(236, 132, 62); font-size: 3rem;" id="carbsPerDayGrams"><?php echo $resultCarbsGrams; ?></div>
+            <h3 class="left-block-subtitle" style="color: black;" id="text-center">
+                <b>grammes/jours</b>
+            </h3>
+            <br>
+            <div style="color: rgb(236, 132, 62); font-size: 3rem;" id="carbsPerDayCal"><?php echo $resultCarbsCal; ?></div>
+            <h3 class="left-block-subtitle" style="color: black;" id="text-center">
+                <b>kcal/jours</b>
+            </h3>
+        </div>
     </div>
-        
     </div>
     <script type="text/javascript" src="../JS/jquery.min.js"></script>
     <script type="text/javascript" src="../JS/main.js"></script>

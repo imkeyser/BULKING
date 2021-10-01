@@ -15,6 +15,14 @@ function submitForm() {
 }
 
 $calories = document.getElementById('caloriesPerDay').textContent;
+$proteinGrams = document.getElementById('proteinsPerDayGrams').textContent;
+$lipidsGrams = document.getElementById('lipidsPerDayGrams').textContent;
+$carbsGrams = document.getElementById('carbsPerDayGrams').textContent;
+$proteinCal = document.getElementById('proteinsPerDayCal').textContent;
+$lipidsCal = document.getElementById('lipidsPerDayCal').textContent;
+$carbsCal = document.getElementById('carbsPerDayCal').textContent;
+
+
 
 function animateValue(id, start, end, duration) {
     // assumes integer values for start and end
@@ -47,4 +55,11 @@ function animateValue(id, start, end, duration) {
     timer = setInterval(run, stepTime);
     run();
 }
-animateValue("caloriesPerDay", 0, $calories, 1000);
+//animateValue("caloriesPerDay", 0, $calories, 1000);
+animateValue("proteinsPerDayGrams", 0, $proteinGrams, 1000);
+animateValue("lipidsPerDayGrams", 0, $lipidsGrams, 1000);
+animateValue("carbsPerDayGrams", 0, $carbsGrams, 1000);
+animateValue("proteinsPerDayCal", 0, $proteinCal, 1000);
+animateValue("lipidsPerDayCal", 0, $lipidsCal, 1000);
+animateValue("carbsPerDayCal", 0, $carbsCal, 1000);
+
