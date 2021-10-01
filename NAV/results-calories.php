@@ -48,7 +48,7 @@
     <h1 class="left-block-title-2" id="text-center">
         VOTRE OBJECTIF CALORIQUE JOURNALIER :
     </h1>
-    <div style="color: orange; font-size: 3rem; text-align: center;" id="caloriesPerDay text-center"><?php echo $resultCalories; ?></div>
+    <div style="color: orange; font-size: 3rem; text-align: center;" id="caloriesPerDay"><?php echo $resultCalories; ?></div>
     </div>
         
     </div>
